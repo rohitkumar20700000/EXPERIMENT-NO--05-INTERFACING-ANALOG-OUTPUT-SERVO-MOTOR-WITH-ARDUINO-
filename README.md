@@ -1,11 +1,13 @@
-###  DATE: 
-
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
-
-
 # EXPERIMENT NO 05 INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
+
+####  DATE: 22/03/2024
+
+####  NAME: ROHIT KUMAR M
+####  ROLL NO : 212221220045
+####  DEPARTMENT: IT
+
+
+
 
 ### AIM
 To interface an Analog output (servo motor) and modify the angular displacement of the servo using PWM signal .
@@ -59,7 +61,17 @@ CIRCUIT DIAGRAM
  
  ![image](https://user-images.githubusercontent.com/36288975/163544618-6eb8a7b5-7f1a-428a-8d9f-fd899b145efb.png)
 
-### FIGURE 04 CIRCUIT DIAGRAM
+
+
+### CIRCUIT DIAGRAM
+
+![Screenshot 2024-03-22 161727](https://github.com/rohitkumar20700000/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/130482461/fda5c7ac-ad03-4b02-a113-7c4f43945488)
+
+### SCHEMATIC DIAGRAM
+![ROHIT KUMAR M(212221220045) (1)_page-0001](https://github.com/rohitkumar20700000/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/130482461/78e28943-75ab-404c-859f-80071a519cd0)
+
+
+
 
 ### PROCEDURE:
 1.	Connect the circuit as per the circuit diagram 
@@ -75,11 +87,60 @@ CIRCUIT DIAGRAM
 
 ### PROGRAM :
  
+```
+#include<Servo.h>
+Servo s1;
+int po=0;
+int red=9;
+int green=8;
+void setup()
+{
+  s1.attach(6);
+  Serial.begin(9600);
+  pinMode(red,OUTPUT);
+  pinMode(green,OUTPUT);
+}
+void loop()
+{
+  for(po=0;po<=180;po+=5)
+  {
+    s1.write(po);
+    delay(200);
+    Serial.println(po);
+  
+}
+for(po=180;po>=0;po-=5)
+{
+  s1.write(po);
+    delay(200);
+    Serial.println(po);
+}  
+  
+  if(po>=120)
+    {
+      digitalWrite(red,HIGH);
+      delay(200);
+      digitalWrite(red,LOW);
+      delay(200);
+  }
+  else
+  {
+      digitalWrite(green,HIGH);
+      delay(200);
+      digitalWrite(green,LOW);
+      delay(200);
+  }
+
+}
+
+```
 
 
 
 
-
+### OUTPUT :
+### GRAPH REPRESENTATION OF ANGLE
+![Screenshot 2024-03-22 161834](https://github.com/rohitkumar20700000/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/130482461/9b5bdbc4-418d-43c6-93bc-81f4ff2dc878)
 
 
 
