@@ -64,7 +64,8 @@ CIRCUIT DIAGRAM
 ### CIRCUIT DIAGRAM
 
 ![Screenshot 2024-03-22 161727](https://github.com/rohitkumar20700000/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/130482461/fda5c7ac-ad03-4b02-a113-7c4f43945488)
-
+##
+##
 ### SCHEMATIC DIAGRAM
 ![ROHIT KUMAR M(212221220045) (1)_page-0001](https://github.com/rohitkumar20700000/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/130482461/78e28943-75ab-404c-859f-80071a519cd0)
 
@@ -82,7 +83,13 @@ CIRCUIT DIAGRAM
 8.	Upload the program and check for the physical working. 
 9.	Ensure safety before powering up the device.
 
-
+##
+##
+##
+##
+##
+##
+##
 ### PROGRAM :
  
 ```
