@@ -1,17 +1,15 @@
-# EXPERIMENT NO 05 INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
-
-####  DATE: 22/03/2024
-
-####  NAME: ROHIT KUMAR M
-####  ROLL NO : 212221220045
-####  DEPARTMENT: IT
+#  EXP-05-INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
+#  DATE: 01/04/2024
+#  NAME: ROHIT KUMAR M
+#  ROLL NO : 212221220045
+#  DEPARTMENT: INFORMATION TECHNOLOGY
 
 
 
 
 ### AIM
 To interface an Analog output (servo motor) and modify the angular displacement of the servo using PWM signal .
-COMPONENTS REQUIRED:
+### COMPONENTS REQUIRED
 1.	Servo motor of choice (9v is preferred )
 2.	1 KΩ resistor 
 3.	Arduino Uno 
